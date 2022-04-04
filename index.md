@@ -1,37 +1,85 @@
-## Welcome to GitHub Pages
+<!-- depois de finaliza fazer a alteracaao para algo mais da minha area -->
 
-You can use the [editor on GitHub](https://github.com/souzala/html.e.css/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/souzala/html.e.css/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="campo">
+      <h1 id="titulo">Cadastro de devs</h1>
+      <p id="subtitulo">Complete suas informacoes:</p>
+      <br>
+    </div>
+    <form> <!--> </!--> 
+      <fieldset class="grupo"> <!-- agrupador de campos -->
+        <div class="campo">
+          <label for="nome"><strong>Nome</strong></label> <!-- explicao do campo -->
+          <input type="texto" name="nome" id="nome" required>
+        </div>
+        
+        <div class="campo">
+          <label for="sobrenome"><strong>Sobrenome</strong</Sobrenome></label>
+          <input type="texto" name="sobrenome" id="sobrenome" required>
+        </div>
+      </fieldset>
+      
+      <div class="campo">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" nome="email" id="email" required>
+      </div>
+      
+      <div class="campo">
+        <label><strong>De qual lado da aplicacao voce desenolve?</strong></label>
+        <label>
+          <input type="radio" name="devweb" value="frontend">Front-end
+        </label>
+        <label> 
+          <input type="radio" name="devweb" value="backend">Back-end
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="fullstack">Fullstack
+        </label>
+      </div>
+      
+      <div class="campo">
+        <label for="senioridade"><strong>Senioridade</strong></label>
+        <select id="senioridade">
+          <option selected disabled value="">Selecione</option>
+          <option>Junior</option>
+          <option>Pleno</option>
+          <option>Senior</option>
+        </select>
+      </div>
+      
+      <fieldset class="grupo">
+        <div id="check">
+          <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+          <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+          <label for"tecnologia1">HTML</label>
+          <input type="checkbox" id="tecnologia1" name="tecnologia1" value="CSS">
+          <label for"tecnologia2">CSS</label>
+          <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Javascript">
+          <label for"tecnologia3">Javascript</label>
+          <input type="checkbox" id="tecnoloogia4" name="tecnologia4" value="PHP">
+          <label for"tecnologia4">PHP</label>
+          <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+          <label for"tecnologia5">C#</label>
+          <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+          <label for"tecnologia6">Python</label>
+          <input type="checkbox" id="tecnlogia7" namme="'tecnologia7" value+"Java">
+          <label for"tecnologia7">Java</label>
+        </div>
+      </fieldset>
+      <div class="campo">
+        <br>
+        <label><strong>Conte um pouco da sua experiencia:</strong></label>
+        <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+      </div>
+      
+      <button class="botao" type="submit">Concluido</button>
+    </form>
+  </body>
+</html>
